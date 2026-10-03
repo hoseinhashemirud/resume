@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100..900&display=swap');
+
+body {
+  direction: rtl;
+  text-align: right;
+  font-family: "Vazirmatn", "Inter", sans-serif;
+}
+
+.resume {
+  direction: rtl;
+  text-align: right;
+
+  border: 2px solid #333;
+  border-radius: 0px;
+
+  padding: 40px;
+  margin: 30px auto;
+
+  max-width: 900px;
+  box-sizing: border-box;
+}
+
+.persian {
+  direction: rtl;
+  text-align: right;
+}
+
+.resume-columns {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  direction: rtl;
+}
+
+.english {
+  direction: ltr;
+  text-align: left;
+}
+
+/* =========================
+   Resume Header
+   ========================= */
+
+.resume-header {
+  display: flex;
+
+  /*
+     LTR controls the physical order:
+     photo = left
+     information = right
+  */
+  direction: ltr;
+
+  align-items: center;
+
+  width: 100%;
+
+  padding-bottom: 0%;
+  margin-bottom: 30px;
+
+  border-bottom: 1px solid #ccc;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================
+   Profile Photo
+   ========================= */
+
+.profile-photo {
+  flex: 0 0 110px;
+
+  width: 180px;
+  height: 180px;
+
+  margin-right: 30px;
+}
+
+.profile-photo img {
+  display: block;
+
+  width: 140px;
+  height: 140px;
+
+  object-fit: cover;
+
+  border-radius: 0%;
+}
+
+
+/* =========================
+   Name + Contacts
+   ========================= */
+
+.header-info {
+  flex: 1;
+
+  direction: rtl;
+  text-align: right;
+
+  min-width: 0;
+}
+
+.header-info h1 {
+  margin: 0 0 40px 0;
+
+  font-size: 38px;
+  font-weight: 760;
+}
+
+
+/* =========================
+   Contact Details
+   ========================= */
+
+.contact-line {
+  display: flex;
+
+  direction: ltr;
+
+  flex-wrap: wrap;
+
+  align-items: center;
+
+  gap: 8px 18px;
+}
+
+.contact-line a {
+  color: #333;
+
+  text-decoration: none;
+
+  font-size: 13px;
+}
+
+.contact-line a:hover {
+  text-decoration: underline;
+}
+
+
+/* =========================
+   Resume Content
+   ========================= */
+
+.resume-content {
+  direction: rtl;
+  text-align: right;
+  line-height: 2;
+}
+
+
+/* =========================
+   Mobile
+   ========================= */
+
+@media (max-width: 700px) {
+
+  .resume-header {
+    align-items: flex-start;
+  }
+
+  .profile-photo {
+    flex: 0 0 80px;
+
+    width: 80px;
+    height: 80px;
+
+    margin-right: 60px;
+  }
+
+  .profile-photo img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .header-info h1 {
+    font-size: 21px;
+  }
+
+  .contact-line {
+    gap: 5px 12px;
+  }
+
+  .contact-line a {
+    font-size: 14px;
+  }
+}
+
+.red-text {
+  color: red;
+}
+
+.blue-text{
+  color:rgb(26, 10, 167)
+}
+
+.redblue-text {
+  color: rgb(141, 8, 90);
+}
