@@ -1,6 +1,12 @@
 project:
-  type: default
+  type: website
+  output-dir: _site
+
+website:
+  title: "Seyed Hosein Hashemi"
+  navbar: false
 
 format:
   html:
     css: resume.css
+    toc: false
