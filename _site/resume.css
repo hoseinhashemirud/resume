@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100..900&display=swap');
+
+body {
+  direction: rtl;
+  text-align: right;
+  font-family: "Vazirmatn", "Inter", sans-serif;
+}
+
+.resume {
+  direction: rtl;
+  text-align: right;
+
+  border: 2px solid #333;
+  border-radius: 0px;
+
+  padding: 40px;
+  margin: 30px auto;
+
+  max-width: 900px;
+  box-sizing: border-box;
+}
+
+.persian {
+  direction: rtl;
+  text-align: right;
+}
+
+.resume-columns {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  direction: rtl;
+}
+
+.english {
+  direction: ltr;
+  text-align: left;
+}
+
+/* =========================
+   Resume Header
+   ========================= */
+
+.resume-header {
+  display: flex;
+
+  /*
+     LTR controls the physical order:
+     photo = left
+     information = right
+  */
+  direction: ltr;
+
+  align-items: center;
+
+  width: 100%;
+
+  padding-bottom: 0%;
+  margin-bottom: 30px;
+
+  border-bottom: 1px solid #ccc;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================
+   Profile Photo
+   ========================= */
+
+.profile-photo {
+  flex: 0 0 110px;
+
+  width: 180px;
+  height: 180px;
+
+  margin-right: 30px;
+}
+
+.profile-photo img {
+  display: block;
+
+  width: 140px;
+  height: 140px;
+
+  object-fit: cover;
+
+  border-radius: 0%;
+}
+
+
+/* =========================
+   Name + Contacts
+   ========================= */
+
+.header-info {
+  flex: 1;
+
+  direction: rtl;
+  text-align: right;
+
+  min-width: 0;
+}
+
+.header-info h1 {
+  margin: 0 0 40px 0;
+
+  font-size: 38px;
+  font-weight: 760;
+}
+
+
+/* =========================
+   Contact Details
+   ========================= */
+
+.contact-line {
+  display: flex;
+
+  direction: ltr;
+
+  flex-wrap: wrap;
+
+  align-items: center;
+
+  gap: 8px 18px;
+}
+
+.contact-line a {
+  color: #333;
+
+  text-decoration: none;
+
+  font-size: 13px;
+}
+
+.contact-line a:hover {
+  text-decoration: underline;
+}
+
+
+/* =========================
+   Resume Content
+   ========================= */
+
+.resume-content {
+  direction: rtl;
+  text-align: right;
+  line-height: 2;
+}
+
+
+/* =========================
+   Mobile / Responsive
+   ========================= */
+
+@media (max-width: 700px) {
+
+  .resume {
+    width: calc(100% - 20px);
+    max-width: 900px;
+    padding: 20px;
+    margin: 10px auto;
+    box-sizing: border-box;
+  }
+
+  .resume-header {
+    display: flex;
+    flex-direction: column;
+    direction: rtl;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .profile-photo {
+    flex: none;
+    width: 90px;
+    height: 90px;
+    margin: 0 0 16px 0;
+  }
+
+  .profile-photo img {
+    display: block;
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+  }
+
+  .header-info {
+    width: 100%;
+    min-width: 0;
+    direction: rtl;
+    text-align: center;
+    box-sizing: border-box;
+  }
+
+  .header-info h1 {
+    margin: 0 0 16px 0;
+    font-size: 24px;
+    line-height: 1.5;
+    overflow-wrap: break-word;
+    word-break: normal;
+  }
+
+  .contact-line {
+    display: flex;
+    direction: ltr;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 8px 12px;
+    box-sizing: border-box;
+  }
+
+  .contact-line a {
+    display: inline-block;
+    color: #333;
+    text-decoration: none;
+    font-size: 13px;
+    white-space: normal;
+    overflow-wrap: anywhere;
+  }
+
+  .resume-content {
+    width: 100%;
+    overflow-wrap: break-word;
+  }
+
+  .resume-columns {
+    grid-template-columns: 1fr;
+  }
+
+  .english {
+    overflow-wrap: anywhere;
+  }
+}
+
+
+/* =========================
+   Small Mobile
+   ========================= */
+
+@media (max-width: 420px) {
+
+  .resume {
+    width: calc(100% - 12px);
+    padding: 14px;
+    margin: 6px auto;
+  }
+
+  .profile-photo {
+    width: 75px;
+    height: 75px;
+  }
+
+  .profile-photo img {
+    width: 75px;
+    height: 75px;
+  }
+
+  .header-info h1 {
+    font-size: 21px;
+    line-height: 1.5;
+  }
+
+  .contact-line {
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .contact-line a {
+    font-size: 12px;
+    max-width: 100%;
+  }
+}
