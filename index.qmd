@@ -145,7 +145,7 @@ Online Resume
 
 - ساکن بلوار کاشانی، تهران  
 
-
+- به زبان انگلیسی در حد <span dir="ltr">(Proficient) C2</span> مسلط هستم.
 <span class="redblue-text" style="text-align: center; display: block;">۱۳ مهر ۱۴۰۵</span>
 
 </div>
