@@ -126,7 +126,7 @@ Online Resume
 
 - SQL(postgre), Modern C++, html and CSS, Linux OS, Microsoft Office, VSCode, AI chatbots, AI Agent API Developers.
 
-- IAR Systems, KEIL, Altium Designer, AVR CodeVision, Matlab & Simulink.
+- IAR Systems, KEIL, Altium Designer, KiCAD, AVR CodeVision, Matlab & Simulink.
 </div>
 
 - همچنین Eplan و برق صنعتی رامی دانم و علاقه مندم در حوزه ی برق اتوماسیون همکاری کنم. 
